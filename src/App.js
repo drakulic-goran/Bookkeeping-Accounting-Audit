@@ -1,22 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HomePage } from './ui/home/HomePage'
+import { AuditServices } from './ui/auditservices/AuditServices'
+import { AccountingServices } from './ui/accountingservices/AccountingServices'
+import { About } from './ui/about/About'
+import { Contact } from './ui/contact/Contact'
+import Navbar from './ui/navbar/Navbar';
 
-function App() {
+
+// import './App.css';
+
+export const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+      <Router>
+            <Navbar style={{width: '100%'}} />
+            <Switch>
+              <Route exact path='/'>
+                <HomePage />
+              </Route>
+              <Route exact path='/auditservices'>
+                <AuditServices />
+              </Route>
+              <Route exact path='/accountingservices'>
+                <AccountingServices />
+              </Route>
+              <Route exact path='/about'>
+                <About  />
+              </Route>
+              <Route exact path='/contact'>
+                <Contact  />
+              </Route>
+            </Switch>
+          </Router>
       </header>
     </div>
   );
