@@ -6,6 +6,7 @@ import { AccountingServices } from './ui/accountingservices/AccountingServices'
 import { About } from './ui/about/About'
 import { Contact } from './ui/contact/Contact'
 import Navbar from './ui/navbar/Navbar';
+import Footer from './ui/footer/Footer';
 
 
 // import './App.css';
@@ -15,26 +16,27 @@ export const App = () => {
     <div className="App">
       <header className="App-header">
 
-      <Router>
-            <Navbar style={{width: '100%'}} />
-            <Switch>
-              <Route exact path='/'>
-                <HomePage />
-              </Route>
-              <Route exact path='/auditservices'>
-                <AuditServices />
-              </Route>
-              <Route exact path='/accountingservices'>
-                <AccountingServices />
-              </Route>
-              <Route exact path='/about'>
-                <About  />
-              </Route>
-              <Route exact path='/contact'>
-                <Contact  />
-              </Route>
-            </Switch>
-          </Router>
+        <Router>
+          <Navbar style={{ width: '100%' }} />
+          <Switch>
+            <Route exact path='/'>
+              <HomePage />
+            </Route>
+            <Route exact path='/auditservices'>
+              <AuditServices />
+            </Route>
+            <Route exact path='/accountingservices'>
+              <AccountingServices />
+            </Route>
+            <Route exact path='/about'>
+              <About />
+            </Route>
+            <Route exact path='/contact'>
+              <Contact />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
       </header>
     </div>
   );
