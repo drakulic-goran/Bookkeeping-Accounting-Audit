@@ -1,5 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Container from 'react-bootstrap/Container'
+
 import { HomePage } from './ui/home/HomePage'
 import { AuditServices } from './ui/auditservices/AuditServices'
 import { AccountingServices } from './ui/accountingservices/AccountingServices'
@@ -8,16 +11,14 @@ import { Contact } from './ui/contact/Contact'
 import Navbar from './ui/navbar/Navbar';
 import Footer from './ui/footer/Footer';
 
-
-// import './App.css';
+import './App.css';
 
 export const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-
+      <Navbar />
+      <Container style={{minHeight: 'inherit'}} >
         <Router>
-          <Navbar style={{ width: '100%' }} />
           <Switch>
             <Route exact path='/'>
               <HomePage />
@@ -35,9 +36,9 @@ export const App = () => {
               <Contact />
             </Route>
           </Switch>
-          <Footer />
         </Router>
-      </header>
+      </Container>
+      <Footer />
     </div>
   );
 }

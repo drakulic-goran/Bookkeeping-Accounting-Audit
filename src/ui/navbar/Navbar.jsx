@@ -5,13 +5,13 @@ import './Navbar.css';
 export const NavbarGeneric = () => {
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand href="/">
-                <img src="/img/logo.png" weign="40" height="40" alt="Logo" />
-                {'  '}
-                Računovodstvo i Revizija
-                {'      '}
-                </Navbar.Brand>
+                <div className="container" style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
+                    <img src="/img/logo.png" weign="40" height="40" alt="Logo" />
+                    <div style={{ paddingLeft: '10px', fontSize: '16px' }}>Računovodstvo i Revizija</div>
+                </div>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
@@ -39,8 +39,6 @@ export const NavbarGeneric = () => {
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-
-
     )
 }
 

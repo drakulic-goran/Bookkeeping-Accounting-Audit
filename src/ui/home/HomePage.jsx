@@ -3,8 +3,10 @@ import React from 'react';
 
 // import { Carousel } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel'
+import Jumbotron from 'react-bootstrap/Jumbotron'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'react-bootstrap/Image'
+import Container from 'react-bootstrap/Container'
 
 import './HomePage.css';
 
@@ -19,11 +21,14 @@ export const HomePage = () => {
     return (
         <div>
             <div className='container-fluid' >
-                <div className="row">
-                    <div className="col-sm-12 content-center">
-                        <h3>Pozovite nas i unapredite vaše poslovanje!</h3>
-                    </div>
-                </div>
+                <Jumbotron className="content-center mt-4" fluid>
+                    <Container>
+                        <h1>Dobrodošli!</h1>
+                        <p>
+                            Budite slobodni da nas kontaktirate i unapredite vaše poslovanje.
+                        </p>
+                    </Container>
+                </Jumbotron>
                 <div className="row">
                     <div className="col-12">
                         <Carousel>
@@ -35,8 +40,8 @@ export const HomePage = () => {
                                     thumbnail
                                 />
                                 <Carousel.Caption>
-                                    <h3>Precizne i ažurne knjigovodstvene, računovodstvene i revizorske usluge</h3>
-                                    <p>Odgovornost za poveren posao, pouzdanost, ljubaznost.</p>
+                                    <h3>Knjigovodstvene, računovodstvene i revizorske usluge</h3>
+                                    <p>Vođene glavne knjige, knjige ulaznih i izlaznih računa, KEP knjige. Robno knjigovodstvo. Izrada kalkulacija. Platni promet. Izrada završnog obračuna. </p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -60,12 +65,20 @@ export const HomePage = () => {
                                 />
                                 <Carousel.Caption>
                                     <h3>Radni odnos</h3>
-                                    <p>Prijave, odjave radnika kao i priprema svih ugovora i obrazaca vezanih za radne odnose. Obračun zarada i naknada zarada. Izradu M-4 obrazaca, PPP obrazaca. Upis radnog staža.</p>
+                                    <p>Prijave, odjave radnika, kao i priprema svih ugovora i obrazaca vezanih za radne odnose. Obračun zarada i naknada zarada. Upis radnog staža.</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
                     </div>
                 </div>
+                <Jumbotron className="content-center mt-5" fluid>
+                    <Container>
+                        <h1>Precizne i ažurne usluge</h1>
+                        <p>
+                            Odgovornost za poveren posao, pouzdanost, ljubaznost.
+                        </p>
+                    </Container>
+                </Jumbotron>
             </div>
         </div>
     )
