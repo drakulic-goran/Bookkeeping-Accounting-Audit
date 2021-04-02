@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
+
 import './Footer.css';
 
 export const Footer = () => {
@@ -9,7 +10,8 @@ export const Footer = () => {
             <Container className="flex-column">
                 <Navbar.Brand style={{ marginLeft: '60px' }} href="/">
                     <div className="row container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
-                        <img src="/img/logo.png" weign="80" height="80" alt="Logo" />
+                        <img src="/img/logo.png" weign="60" height="60" alt="DraxuS" />
+                        <div style={{ paddingLeft: '10px' }}>RK DraxuS</div>
                         <p style={{ fontSize: '10px', color: 'grey' }}>© 2021 Sva prava zastićena</p>
                     </div>
                 </Navbar.Brand>

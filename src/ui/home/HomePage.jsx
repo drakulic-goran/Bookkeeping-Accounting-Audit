@@ -1,10 +1,8 @@
 
 import React from 'react';
 
-// import { Carousel } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container'
 
@@ -12,19 +10,13 @@ import './HomePage.css';
 
 export const HomePage = () => {
 
-    // const [index, setIndex] = useState(0);
-
-    // const handleSelect = (selectedIndex, e) => {
-    //     setIndex(selectedIndex);
-    // };
-
     return (
         <div>
             <div className='container-fluid' >
                 <Jumbotron className="content-center mt-4" fluid>
                     <Container>
-                        <h1>Dobrodošli!</h1>
-                        <p>
+                        <h4>Dobrodošli!</h4>
+                        <p className="mt-4">
                             Budite slobodni da nas kontaktirate i unapredite vaše poslovanje.
                         </p>
                     </Container>
@@ -40,8 +32,10 @@ export const HomePage = () => {
                                     thumbnail
                                 />
                                 <Carousel.Caption>
-                                    <h3>Knjigovodstvene, računovodstvene i revizorske usluge</h3>
-                                    <p>Vođene glavne knjige, knjige ulaznih i izlaznih računa, KEP knjige. Robno knjigovodstvo. Izrada kalkulacija. Platni promet. Izrada završnog obračuna. </p>
+                                    <h5 className="mt-2 ml-2 mr-2" >Knjigovodstvene i računovodstvene usluge</h5>
+                                    <p className="mt-3 ml-2 mr-2" >
+                                        Vođene glavne knjige, KUF, KIF i KEP knjige. Izrada kalkulacija i završnog obračuna... 
+                                    </p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -52,8 +46,10 @@ export const HomePage = () => {
                                     thumbnail
                                 />
                                 <Carousel.Caption>
-                                    <h3>Poresko savetovanje</h3>
-                                    <p>Obračun PDV-a. Zastupanje pred organima Poreske uprave. Korespodencija sa Poreskom Upravom.</p>
+                                    <h5 className="mt-2 ml-2 mr-2" >Poresko savetovanje</h5>
+                                    <p className="mt-3 ml-2 mr-2" >
+                                        Poresko savetovanje i zastupanje pred organima Poreske uprave. Obračun PDV-a i predaja poreskih prijava. Korespodencija sa Poreskom Upravom...
+                                    </p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -64,8 +60,10 @@ export const HomePage = () => {
                                     thumbnail
                                 />
                                 <Carousel.Caption>
-                                    <h3>Radni odnos</h3>
-                                    <p>Prijave, odjave radnika, kao i priprema svih ugovora i obrazaca vezanih za radne odnose. Obračun zarada i naknada zarada. Upis radnog staža.</p>
+                                    <h5 className="mt-2 ml-2 mr-2" >Radni odnos</h5>
+                                    <p className="mt-3 ml-2 mr-2" >
+                                        Prijave i odjave radnika. Priprema svih ugovora i obrazaca vezanih za radne odnose. Obračun zarada i naknada zarada. Upis radnog staža...
+                                    </p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
@@ -73,8 +71,8 @@ export const HomePage = () => {
                 </div>
                 <Jumbotron className="content-center mt-5" fluid>
                     <Container>
-                        <h1>Precizne i ažurne usluge</h1>
-                        <p>
+                        <h4>Precizne i ažurne usluge</h4>
+                        <p className="mt-4">
                             Odgovornost za poveren posao, pouzdanost, ljubaznost.
                         </p>
                     </Container>

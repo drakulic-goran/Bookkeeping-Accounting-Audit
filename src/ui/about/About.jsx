@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 
-// import './home.css';
+// import './About.css';
 
 export const About = () => {
 
@@ -16,12 +16,12 @@ export const About = () => {
         <div>
             <Jumbotron className="content-center mt-4" fluid>
                 <Container>
-                    <h3>
+                    <h4>
                         Knjigovodstvena agencija koja dugi niz godina pruža knjigovodstvene usluge za privredna drustva i preduzetnike.
-                        </h3>
-                    <p>
-                        Iskustvo naseg kadra je veliko, uz veliku sposobnost prilagođavanja svakom klijentu i preuzimanje sve odgovornosti za svoj rad.
-                        </p>
+                    </h4>
+                    <p className="mt-4">
+                        Iskustvo naseg kadra je veliko, uz veliku sposobnost prilagođavanja svakom klijentu i preuzimanje celokupne odgovornosti za svoj rad.
+                    </p>
                 </Container>
             </Jumbotron>
             <Jumbotron fluid>
@@ -30,41 +30,26 @@ export const About = () => {
                     <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
                         <Row>
                             <Col sm={4}>
-                                <ListGroup className="mt-4" >
+                                <ListGroup className="mt-4 ml-3" >
                                     <ListGroup.Item action href="#link1">
-                                        Precizne i ažurne knjigovodstvene usluge
+                                        Efikasne i priznate revizorske usluge
                                     </ListGroup.Item>
                                     <ListGroup.Item action href="#link2">
-                                        Poresko savetovanje
+                                        Precizne i ažurne knjigovodstvene usluge
                                     </ListGroup.Item>
                                     <ListGroup.Item action href="#link3">
-                                        Obračun PDV-a
+                                        Poresko savetovanje i zastupanje pred organima Poreske uprave
                                     </ListGroup.Item>
                                     <ListGroup.Item action href="#link4">
-                                        Zastupanje pred organima Poreske uprave
+                                        Prijave i odjave radnika, kao i pripremu svih ugovora i obrazaca vezanih za radne odnose
                                     </ListGroup.Item>
                                     <ListGroup.Item action href="#link5">
-                                        Prijave, odjave radnika, kao i pripremu svih ugovora i obrazaca vezanih za radne odnose
-                                    </ListGroup.Item>
-                                    <ListGroup.Item action href="#link6">
-                                        Obračun zarada i naknada zarada
-                                    </ListGroup.Item>
-                                    <ListGroup.Item action href="#link7">
-                                        Izradu M-4 obrazaca, PPP obrazaca
-                                    </ListGroup.Item>
-                                    <ListGroup.Item action href="#link8">
-                                        Upis radnog staža
-                                    </ListGroup.Item>
-                                    <ListGroup.Item action href="#link9">
-                                        Korespodenciju sa Poreskom Upravom
-                                    </ListGroup.Item>
-                                    <ListGroup.Item action href="#link10">
                                         Korektne cene naših usluga
                                     </ListGroup.Item>
                                 </ListGroup>
                             </Col>
                             <Col sm={8}>
-                                <Tab.Content className="mt-4" >
+                                <Tab.Content className="mt-4 mr-3" >
                                     <Tab.Pane eventKey="#link1">
                                         <div>OPIS</div>
                                     </Tab.Pane>
@@ -78,21 +63,6 @@ export const About = () => {
                                         <div>OPIS</div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link5">
-                                        <div>OPIS</div>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="#link6">
-                                        <div>OPIS</div>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="#link7">
-                                        <div>OPIS</div>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="#link8">
-                                        <div>OPIS</div>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="#link9">
-                                        <div>OPIS</div>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="#link10">
                                         <div>OPIS</div>
                                     </Tab.Pane>
                                 </Tab.Content>

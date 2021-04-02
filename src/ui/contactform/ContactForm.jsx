@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 // import './ContactForm.css';
 
@@ -12,6 +13,7 @@ export const ContactForm = () => {
     const [form, setForm] = useState({})
     const [errors, setErrors] = useState({})
     const [myFormRef, setMyFormRef] = useState()
+    const [modalShow, setModalShow] = useState(false);
 
     const onSubmit = async (data) => {
         try {
@@ -67,17 +69,16 @@ export const ContactForm = () => {
             setErrors(newErrors)
         } else {
             onSubmit(form);
-            myFormRef.reset();
-            // alert('Thank you for your feedback!')
+            setModalShow(true);
         }
     }
 
 
     return (
         <div className='d-flex flex-column align-items-center'>
-            <h3 className="content-center" >Ukoliko imate neko pitanje ili zahtev, budite slobodni da nas kontaktirate.</h3>
+            <h5 className="content-center" >Ukoliko imate neko pitanje ili zahtev, budite slobodni da nas kontaktirate.</h5>
             <Form
-                className="content-center" style={{ width: '100%', maxWidth: '600px' }}
+                className="content-left mt-3" style={{ width: '100%', maxWidth: '600px' }}
                 ref={(el) => setMyFormRef(el)}
                 onSubmit={(e) => handleSubmit(e)}
             >
@@ -115,7 +116,7 @@ export const ContactForm = () => {
                     </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group>
-                    <Form.Label>Poruka</Form.Label>
+                    <Form.Label>Teks poruke</Form.Label>
                     <Form.Control
                         as="textarea"
                         rows={10}
@@ -126,9 +127,32 @@ export const ContactForm = () => {
                         {errors.message}
                     </Form.Control.Feedback>
                 </Form.Group>
-                <Button type='submit'>Pošalji</Button>
+                <div className="content-center" >
+                    <Button type='submit'>Pošalji</Button>
+                </div>
             </Form>
-        </div>
+            <Modal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                size="sm"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        Hvala Vam za interesovanje
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>
+                        Vaše pitanje će biti razmotreno u najkraćem mogućem vremenskom roku i odgovor na isto će Vam biti prosleđen.
+                    </p>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={() => { setModalShow(false); myFormRef.reset(); }}>Ok</Button>
+                </Modal.Footer>
+            </Modal>
+        </div >
     );
 
 }

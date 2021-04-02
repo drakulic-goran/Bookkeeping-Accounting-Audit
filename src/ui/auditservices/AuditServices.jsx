@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 
-// import './home.css';
+// import './AuditServices.css';
 
 export const AuditServices = () => {
 
@@ -16,11 +16,11 @@ export const AuditServices = () => {
         <div>
             <Jumbotron className="mt-4" fluid>
                 <Container>
-                    <h4>Agencija za Vas obavlja sledeće revizorske poslove:</h4>
+                    <h5>Agencija za Vas obavlja sledeće revizorske poslove:</h5>
                     <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
                         <Row>
                             <Col sm={4}>
-                                <ListGroup className="mt-4" >
+                                <ListGroup className="mt-4 ml-3" >
                                     <ListGroup.Item action href="#link1">
                                         Izradu revizorskih procena
                                     </ListGroup.Item>
@@ -54,36 +54,86 @@ export const AuditServices = () => {
                                 </ListGroup>
                             </Col>
                             <Col sm={8}>
-                                <Tab.Content className="mt-4" >
+                                <Tab.Content className="mt-5 mr-3" >
                                     <Tab.Pane eventKey="#link1">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link2">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link3">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link4">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link5">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link6">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link7">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link8">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link9">
-                                        <div>OPIS</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link10">
-                                        <div>OPIS</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Col>

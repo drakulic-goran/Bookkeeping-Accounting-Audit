@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+
 import './Navbar.css';
 
 export const NavbarGeneric = () => {
@@ -8,8 +9,8 @@ export const NavbarGeneric = () => {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand href="/">
                 <div className="container" style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
-                    <img src="/img/logo.png" weign="40" height="40" alt="Logo" />
-                    <div style={{ paddingLeft: '10px', fontSize: '16px' }}>Računovodstvo i Revizija</div>
+                    <img src="/img/logo.png" weign="40" height="40" alt="DraxuS" />
+                    <div style={{ paddingLeft: '10px' }}>RK DraxuS</div>
                 </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

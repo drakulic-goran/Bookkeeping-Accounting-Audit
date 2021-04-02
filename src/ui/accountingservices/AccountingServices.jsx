@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 
-// import './home.css';
+// import './AccountingServices.css';
 
 export const AccountingServices = () => {
 
@@ -16,11 +16,11 @@ export const AccountingServices = () => {
         <div>
             <Jumbotron className="mt-4" fluid>
                 <Container>
-                    <h4>Računovodstvena i knjigovodstvena agencija za Vas obavlja sledeće poslove:</h4>
+                    <h5>Računovodstvena i knjigovodstvena agencija za Vas obavlja sledeće poslove:</h5>
                     <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
                         <Row>
                             <Col sm={4}>
-                                <ListGroup className="mt-4" >
+                                <ListGroup className="mt-4 ml-3" >
                                     <ListGroup.Item action href="#link1">
                                         Vođene glavne knjige
                                     </ListGroup.Item>
@@ -43,10 +43,10 @@ export const AccountingServices = () => {
                                         Ažurno vođenje KEP knjige
                                     </ListGroup.Item>
                                     <ListGroup.Item action href="#link8">
-                                        Vođenje radnih odnosa (Ugovori o radu, dopunski rad, M-UN ili M-UN/K, privremeni i povremeni poslovi i dr), prijave – odjave radnika, obračun zarada i naknada zarada, bolovanje do 30 i preko 30 dana, porodiljsko bolovanje, predaja odgovarajuće dokumentacije
+                                        Vođenje radnih odnosa
                                     </ListGroup.Item>
                                     <ListGroup.Item action href="#link9">
-                                        Upis radnog staža (M-4 obrasci, M-4/SP, itd)
+                                        Upis radnog staža
                                     </ListGroup.Item>
                                     <ListGroup.Item action href="#link10">
                                         Obračun putnih domaćih i ino dnevnica
@@ -66,48 +66,118 @@ export const AccountingServices = () => {
                                 </ListGroup>
                             </Col>
                             <Col sm={8}>
-                                <Tab.Content className="mt-4" >
+                                <Tab.Content className="mt-5 mr-3" >
                                     <Tab.Pane eventKey="#link1">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link2">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link3">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link4">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link5">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link6">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link7">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link8">
-                                        <div>OPIS I CENA</div>
+                                        <div className="text-justify">
+                                            Ugovori o radu, dopunski rad, M-UN ili M-UN/K, privremeni i povremeni poslovi i dr), prijave – odjave radnika, obračun zarada i naknada zarada, bolovanje do 30 i preko 30 dana, porodiljsko bolovanje, predaja odgovarajuće dokumentacije...
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link9">
-                                        <div>OPIS</div>
+                                        <div className="text-justify">
+                                            M-4 obrasci, M-4/SP, itd
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link10">
-                                        <div>OPIS</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link11">
-                                        <div>OPIS</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link12">
-                                        <div>OPIS</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link13">
-                                        <div>OPIS</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="#link14">
-                                        <div>OPIS</div>
+                                        <div className="text-justify">
+                                            OPIS
+                                        </div>
+                                        <div className="text-right mt-5 mr-5">
+                                            50$
+                                        </div>
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Col>
