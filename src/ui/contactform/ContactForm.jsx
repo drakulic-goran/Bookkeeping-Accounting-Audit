@@ -116,7 +116,7 @@ export const ContactForm = () => {
                     </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group>
-                    <Form.Label>Teks poruke</Form.Label>
+                    <Form.Label>Tekst poruke</Form.Label>
                     <Form.Control
                         as="textarea"
                         rows={10}
